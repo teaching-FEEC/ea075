@@ -148,3 +148,4 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > - https://pvieito.com/2016/09/xyloband-reverse-engineering
 > - https://www.instructables.com/Hacking-a-Xyloband-With-Arduino/
 > - https://blog.hqcodeshop.fi/archives/395-Xyloband-Whats-inside-one.html
+> - https://www.nutsvolts.com/magazine/article/august2013_Bates
