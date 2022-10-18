@@ -152,3 +152,4 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > - https://www.renesas.com/us/en/products/power-power-management/wireless-power/introduction-to-wireless-battery-charging
 > - https://www.st.com/content/ccc/fragment/corporate/event_information/event_image/group0/26/e3/25/71/fe/52/42/0c/APEC2018_WirelessCharging/files/APEC2018_WirelessCharging.pdf/jcr:content/translations/en.APEC2018_WirelessCharging.pdf
 > - https://www.atlasrfidstore.com/rfid-insider/active-rfid-vs-passive-rfid
+> - https://www.devmedia.com.br/fluxogramas-diagrama-de-blocos-e-de-chapin-no-desenvolvimento-de-algoritmos/28550
