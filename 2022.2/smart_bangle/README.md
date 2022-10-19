@@ -108,6 +108,13 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ### Especificação Estrutural
 
+>
+> - Microcontrolador Atmel SAM D20
+> - Chip rádio frequência Si4362:  dispositivo receptor de alto desempeno e baixa corrente que cobrem as bandas de frequência de 142 a 1050 MHz. Ele é responsável por receber, amplificar e demodular dados para cada smart bangle. Esses dados podem ser trabalhados no Microcontrolador fazendo com que os LEDs RBG sejam acionados conforme solicitado.
+> - Circuito receptor para carregamento por indução: STWLC04 1W STEVAL-ISB038V1R
+> - 
+
+
 > (Se preferir, adicione um link para o documento de especificação estrutural)
 > 
 > Entende-se por estrutural a descrição tanto das características elétricas e temporais como das restrições físicas de cada bloco funcional.
