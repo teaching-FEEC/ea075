@@ -151,7 +151,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > com a norma internacional ISO 1028-1973 e IS0 2972-1979.
 
 
-<img src="alg_main.svg" width=120% height=120%>
+<img src="alg_main.svg" width=50% height=50%>
 
 
 ## Referências
