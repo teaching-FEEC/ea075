@@ -141,14 +141,7 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ### Especificação de Algoritmos 
 
-> (Se preferir, adicione um link para o documento de especificação de algoritmos).
-> 
-> Deve ser elaborado para CADA evento o algoritmo de tratamento deste evento. Com base no
-> tamanho de cada algoritmo, estima-se o tamanho de memória necessária para armazenar todos
-> os programas e os dados associados. Isso permitirá especificar a memória a ser utilizada e o
-> espaço onde serão armazenados os programas. O algoritmo de tratamento de evento pode
-> ser representado graficamente por um fluxograma. Recomenda-se usar símbolos gráficos consistentes 
-> com a norma internacional ISO 1028-1973 e IS0 2972-1979.
+A seguir são definidos os algoritmos para cada evento e uma aproximação para a quantidade de memória necessária
 
 #### Main
 
@@ -203,8 +196,15 @@ Este evento é chamado após o processmento da mensagem, primeiramente é defini
 
 #### Relógio TC
 
+Acionado via interrupção conforme o tempo definido no evento festa ou Alerta/Aviso. Primeiramente verifica se precisa acionar o led, caso seja acionado muda a variável led_pisca para False, desse modo, na próxima interrupção o led será apagado criando o efeito de pisca pisca. No próximo if ele analisa se precisa acionar o vibra call, aciona e decrementa 1 da variável que armazenar a quantidad de acionamentos faltantes.
+
 <img src="relogio_tc.svg" width=60% height=60%>
 
+#### Memória
+
+A seguir temos uma previsão de memória ocupada, ela foi feita com base nas variáveis que serão criadas e com uma estimativa retirada dos labs de EA871 para a incialização dos módulos. Considerando uma margem de erro de 50% temos que a memória mínima necessária é de aproximadmente 30KB.
+
+<img src="memória utilizada.PNG" width=60% height=60%>
 
 ## Referências
 > - https://pvieito.com/2016/09/xyloband-reverse-engineering
