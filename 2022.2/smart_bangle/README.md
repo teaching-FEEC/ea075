@@ -157,9 +157,9 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 <img src="alg_led.svg" width=40% height=40%>
 
-<img src="alg_carregamento.svg" width=40% height=40%>
+<img src="alg_carregamento.svg" width=60% height=60%>
 
-<img src="alg_Alerta_Aviso.svg" width=40% height=40%>
+<img src="alg_Alerta_Aviso.svg" width=60% height=60%>
 
 
 ## Referências
