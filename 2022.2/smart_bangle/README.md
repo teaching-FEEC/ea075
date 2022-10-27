@@ -158,6 +158,10 @@ A seguir temos o fluxograma do nosso algoritmo principal a main, ela é respons�
 
 #### Carregamento e economia
 
+Economia de energia, ativado quando a bateria se encontra abaixo de 20%, ele incializa o led de estado e o ativa na cor vermelha.
+
+Quando uma carga por indução for conectada será gerada uma interrução que chama o evento carregamento, que também controla o led de estado, desligando-o caso a carga seja desconectada ou ativando a cor conforme o nível de bateria vai aumentando.
+
 <img src="alg_carregamento.svg" width=60% height=60%>
 
 #### Comunicação sem fio
@@ -169,6 +173,15 @@ Este algoritmo é acionado quando há uma interrupção causada pelo envio de um
   - mascara: 0b00111000
 - xxx: Esse valor conrreponde a cor de ativação do led ou ao número de vezes que o vibracall vai vibrar.
   - mascara: 0b00000111
+ 
+ Os modos de operação são definidos conforme a seguinte tabela
+ 
+ | cc | Tarefa |
+ | -- | -- |
+ | 00 | Desliga pulseira |
+ | 01 | Chama o evento festa |
+ | 10 | Chama o evento Alerta/Aviso |
+ | 11 | Chama o evento Festa e depois Alerta/Aviso |
 
 <img src="alg_sem_fio.drawio.svg" width=40% height=40%>
 
@@ -176,7 +189,7 @@ Este algoritmo é acionado quando há uma interrupção causada pelo envio de um
 
 Este evento é chamado após a decodificação da mensagem pelo envento comunicação sem fio, aqui são ativados os módulos necessários para acionamento do led(rgb e TC). Para definir qual led será acionado segue se a seguinte padronização, xxx = rgb, ondea cada bit conrresponde a um led. Para ativar a cor é utilizado como referência a imagem abaixo, quando estão todos acionados se tem a cor branca, e assim serve para as demais.
 
-<img src="cores-rgb.jpg" width=40% height=40%>
+<img src="cores-rgb.jpg" width=20% height=20%>
 
 Para ativar o tempo de acionamento é utilizado o relógio interno do processador TC. Como o olho humano pisca a cada 0.2s, foi definido como tempo base 0.25s, desse modo quando temos ttt=0 -> 0s, ttt=1 -> 0.25s, ttt=2 -> 0.5s ... ttt=7 -> 1.75s, desse modo, é possível configurar um tempo de delay de 0.25s até 1.75s.
 
@@ -184,10 +197,13 @@ Para ativar o tempo de acionamento é utilizado o relógio interno do processado
 
 #### Evento alerta/aviso
 
+Este evento é chamado após o processmento da mensagem, primeiramente é definido quantas vezes o módulo vai vibrar tendo como o base o valor 3, portanto, se vvv=1 -> 3 vezes, vvv=2 -> 6 vezes ... vvv=7 -> 21 vezes. E o tempo entre cada vibração tem como base 0.5s, caso ttt=1, vibra por 0.5s e fica sem vibrar por 0.5s, isso será feitos conforme o número de vezes difinido em vvv.
+
 <img src="alg_Alerta_Aviso.svg" width=60% height=60%>
 
 #### Relógio TC
 
+<img src="relogio_tc.svg" width=60% height=60%>
 
 
 ## Referências
