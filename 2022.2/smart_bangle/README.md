@@ -150,16 +150,44 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 > ser representado graficamente por um fluxograma. Recomenda-se usar símbolos gráficos consistentes 
 > com a norma internacional ISO 1028-1973 e IS0 2972-1979.
 
+#### Main
+
+A seguir temos o fluxograma do nosso algoritmo principal a main, ela é responsável por fazer o processo de incialização do sistema deixando-o pronto para receber comandos. Após inicializar os módulos, o sistema fica em loop até que seja desligado, enquanto isso não acontece ele fica sujeito a interrupção dos eventos em standby, entretanto, se a bateria estiver baixa, o estado de economia será ativado, e o sistema fica inerte até que seja conectado ao carregador.
 
 <img src="alg_main.svg" width=40% height=40%>
 
-<img src="alg_sem_fio.drawio.svg" width=40% height=40%>
-
-<img src="alg_led.svg" width=40% height=40%>
+#### Carregamento e economia
 
 <img src="alg_carregamento.svg" width=60% height=60%>
 
+#### Comunicação sem fio
+
+Este algoritmo é acionado quando há uma interrupção causada pelo envio de uma mensagem, após recebe-la ele processa ela, seguindo o seguinte formato em binário cctttrgb, podendo ser decodificada através de uma mascara de bit
+- cc: Seleciona o modo de operação do relógio
+  - mascara: 0b11000000
+- tt: Seleciona o tempo de operação, serve tanto para o vibra call, quanto para os leds
+  - mascara: 0b00111000
+- xxx: Esse valor conrreponde a cor de ativação do led ou ao número de vezes que o vibracall vai vibrar.
+  - mascara: 0b00000111
+
+<img src="alg_sem_fio.drawio.svg" width=40% height=40%>
+
+#### Evento festa
+
+Este evento é chamado após a decodificação da mensagem pelo envento comunicação sem fio, aqui são ativados os módulos necessários para acionamento do led(rgb e TC). Para definir qual led será acionado segue se a seguinte padronização, xxx = rgb, ondea cada bit conrresponde a um led. Para ativar a cor é utilizado como referência a imagem abaixo, quando estão todos acionados se tem a cor branca, e assim serve para as demais.
+
+<img src="cores-rgb.jpg" width=40% height=40%>
+
+Para ativar o tempo de acionamento é utilizado o relógio interno do processador TC. Como o olho humano pisca a cada 0.2s, foi definido como tempo base 0.25s, desse modo quando temos ttt=0 -> 0s, ttt=1 -> 0.25s, ttt=2 -> 0.5s ... ttt=7 -> 1.75s, desse modo, é possível configurar um tempo de delay de 0.25s até 1.75s.
+
+<img src="alg_led.svg" width=40% height=40%>
+
+#### Evento alerta/aviso
+
 <img src="alg_Alerta_Aviso.svg" width=60% height=60%>
+
+#### Relógio TC
+
 
 
 ## Referências
