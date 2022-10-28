@@ -151,7 +151,7 @@ A seguir temos o fluxograma do nosso algoritmo principal a main, ela é respons�
 
 #### Carregamento e economia
 
-Economia de energia, ativado quando a bateria se encontra abaixo de 20%, ele incializa o led de estado e o ativa na cor vermelha.
+O evento Economia de energia é ativado quando a bateria se encontra abaixo de 20%, com isso ele incializa o led de estado e o ativa na cor vermelha.
 
 Quando uma carga por indução for conectada será gerada uma interrução que chama o evento carregamento, que também controla o led de estado, desligando-o caso a carga seja desconectada ou ativando a cor conforme o nível de bateria vai aumentando.
 
@@ -196,7 +196,7 @@ Este evento é chamado após o processmento da mensagem, primeiramente é defini
 
 #### Relógio TC
 
-Acionado via interrupção conforme o tempo definido no evento festa ou Alerta/Aviso. Primeiramente verifica se precisa acionar o led, caso seja acionado muda a variável led_pisca para False, desse modo, na próxima interrupção o led será apagado criando o efeito de pisca pisca. No próximo if ele analisa se precisa acionar o vibra call, aciona e decrementa 1 da variável que armazenar a quantidad de acionamentos faltantes.
+Acionado via interrupção conforme o tempo definido no evento festa ou Alerta/Aviso. Primeiramente verifica se precisa acionar o led, caso seja acionado muda a variável led_pisca para False, desse modo, na próxima interrupção o led será apagado criando o efeito de pisca pisca. No próximo if ele analisa se precisa acionar o vibra call, aciona e decrementa 1 da variável que armazenar a quantidade de acionamentos faltantes.
 
 <img src="relogio_tc.svg" width=60% height=60%>
 
