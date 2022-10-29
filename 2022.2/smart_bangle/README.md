@@ -108,10 +108,10 @@ oferecida no segundo semestre de 2022, na Unicamp, sob supervisão da Profa. Dra
 
 ### Especificação Estrutural
 
->
-> - Microcontrolador Atmel SAM D20
-> - Chip rádio frequência Si4362:  dispositivo receptor de alto desempeno e baixa corrente que cobrem as bandas de frequência de 142 a 1050 MHz. Ele é responsável por receber, amplificar e demodular dados para cada smart bangle. Esses dados podem ser trabalhados no Microcontrolador fazendo com que os LEDs RBG sejam acionados conforme solicitado.
-> - Circuito receptor para carregamento por indução: STWLC04 1W STEVAL-ISB038V1R
+> - Micro vibracall 1027: atuador responsável por alertar através da vibração sempre que algum evento ocorra. Ele opera numa tensão entre 2,5V a 4V, podendo chegar a uma corrente de operação de 90mA e conta com uma velocidade de 9000 RPM. Suas dimensões são milimétricas: 40 x 10 x 3.
+> - Microcontrolador Atmel SAM D20: 
+> - Chip rádio frequência Si4362:  dispositivo receptor de alto desempeno e baixa corrente que cobrem as bandas de frequência de 142 a 1050 MHz. Ele é responsável por receber, amplificar e demodular dados para cada smart bangle. Esses dados podem ser trabalhados no Microcontrolador fazendo com que os LEDs RBG sejam acionados conforme solicitado. O receptor Si4362 conta com uma ampla faixa de tensão de operação (1,8V a 3,6V) e um baixo consumo de corrente. O sinal recebido é recebido e convertido para a esfera digital através de um conversor analógico digital (ADC) interno. Esse sinal modulado é enviado para o sistema microcontrolador (MCU) através de um GPIO ou via barramento pelo protocolo SPI e é projetado para suportar taxas de dadis de 100 bps a 1 Mbps.
+> - Chipset STEVAL-ISB038V1R: dispositivo miniatuarizado responsável pelo carregamento de bateria de íon ou lítio sem fio, por indução eletromagnética. Ele permite a trasnferencia de eneria de até 1W com bobinas menores comparado a outros dispositivos do mercado (bobinas de 11 milimetros de diâmetro), mas pode ter a capacidade de transferencia aumentada usando bobinas maiores. A interface serial de comunicação utilizada é o I²C. Suas dimensões são 3,12 mm x 4,73 mm.
 > - 
 
 
