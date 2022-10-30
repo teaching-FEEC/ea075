@@ -217,3 +217,10 @@ A seguir temos uma previsão de memória ocupada, ela foi feita com base nas var
 > - https://www.st.com/content/ccc/fragment/corporate/event_information/event_image/group0/26/e3/25/71/fe/52/42/0c/APEC2018_WirelessCharging/files/APEC2018_WirelessCharging.pdf/jcr:content/translations/en.APEC2018_WirelessCharging.pdf
 > - https://www.atlasrfidstore.com/rfid-insider/active-rfid-vs-passive-rfid
 > - https://www.devmedia.com.br/fluxogramas-diagrama-de-blocos-e-de-chapin-no-desenvolvimento-de-algoritmos/28550
+> - https://www.digchip.com/datasheets/parts/datasheet/2/943/GRX-210.php
+> - https://embarcados.com.br/atmel-sam-d20-arm-cortex-m0/
+> - https://datasheet.octopart.com/ATSAMD20E17A-AU-Atmel-datasheet-20681123.pdf
+> - https://www.silabs.com/documents/public/data-sheets/Si4362.pdf
+> - https://www.st.com/resource/en/user_manual/um2098-getting-started-with-the-stevalisb038v1r-wearable-wireless-power-receiver-based-on-stwlc04-stmicroelectronics.pdf
+> - https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/246927
+> - http://www.advanced-monolithic.com/pdf/ds1117.pdf
