@@ -167,7 +167,7 @@ A seguir são definidos os algoritmos para cada evento e uma aproximação para 
 
 #### Evento alerta/aviso
 
-. Este evento é chamado após o processmento da mensagem, primeiramente é definido quantas vezes o módulo vai vibrar tendo como o base o valor 3, portanto, se vvv=1 -> 3 vezes, vvv=2 -> 6 vezes ... vvv=7 -> 21 vezes. E o tempo entre cada vibração tem como base 0.5s, caso ttt=1, vibra por 0.5s e fica sem vibrar por 0.5s, isso será feitos conforme o número de vezes difinido em vvv.
+> Este evento é chamado após o processmento da mensagem, primeiramente é definido quantas vezes o módulo vai vibrar tendo como o base o valor 3, portanto, se vvv=1 -> 3 vezes, vvv=2 -> 6 vezes ... vvv=7 -> 21 vezes. E o tempo entre cada vibração tem como base 0.5s, caso ttt=1, vibra por 0.5s e fica sem vibrar por 0.5s, isso será feitos conforme o número de vezes difinido em vvv.
 
 <img src="alg_Alerta_Aviso.svg" width=60% height=60%>
 
