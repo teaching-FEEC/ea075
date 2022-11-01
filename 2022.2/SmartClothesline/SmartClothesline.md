@@ -40,7 +40,7 @@ O microcontrolador escolhido é o ESP-32, este possui módulo wifi e bluetooth, 
  
 ### Especificação de Algoritmos 
 
-![Alt](YL-83 (Sensor de Chuva).png)
+![YL-83 (Sensor de Chuva)](https://github.com/OtavioSoares1997/ea075/blob/main/2022.2/SmartClothesline/YL-83%20(Sensor%20de%20Chuva).jpg)
 
 
 ## Referências
