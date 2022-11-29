@@ -69,9 +69,11 @@ Os componentes utilizados no projeto serão os seguintes:
  - Sensor de temperatura DS18B20
  - Sensor de nível LA16M-40
  - Sensor de pH PH4502C + PH Eletrodo
- - Sensor de luminosidade LDR
+ - Sensor de luminosidade GL5528
  - Sensor de turbidez CUS52D
  - Micro Servo Motor 9g Tower Pro SG90
+ - Regulador de Tensão AMS1117 5V 1A
+ - Mini Fonte 5V HLK-PM01 100-240V
 
  ### Especificação do microcontrolador ESP32
 - ROM interna de 448kB
@@ -82,7 +84,7 @@ Os componentes utilizados no projeto serão os seguintes:
 - Alimentação VCC de 2,3V a 3,6V
 
 ### Periféricos do chip ESP32
-34 portas GPIO’s
+- 34 portas GPIO’s
 - 2 conversores ADC 12-bits (18 canais)
 - 2 Conversores DAC 8-Bits
 - 4 Interfaces SPI – Clock até 40MHz
