@@ -59,7 +59,7 @@ O usuário poderá configurar:
 
 ## Descrição Estrutural do Sistema
 O Aquário Inteligente é dividido basicamente no nível dos sensores, atuadores e a nuvem. Os sensores fazem a leitura dos valores estipulados ou a condição desejada. Esses dados que foram aferidos, serão enviados para nuvem periodicamente, e se caso estejam fora do valor desejado ou condição, deverão acionar os atuadores. 
-![Diagrama blocos Aquário inteligente](https://github.com/marimartins33/ea075/blob/main/2022.2/Aquario_Inteligente/Diagrama%20sem%20nome.jpg)
+![Diagrama blocos Aquário inteligente](https://github.com/marimartins33/ea075/blob/main/2022.2/Aquario_Inteligente/images/diagrama_aquario.jpg)
 
 ## Especificações 
 
