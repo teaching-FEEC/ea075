@@ -75,6 +75,7 @@ Os componentes utilizados no projeto serão os seguintes:
  - Regulador de Tensão AMS1117 5V 1A
  - Mini Fonte 5V HLK-PM01 100-240V
 
+O datasheet dos componentes e a justificativa do uso pode ser acessada [aqui](https://github.com/marimartins33/ea075/blob/main/2022.2/Aquario_Inteligente/components.md).
  ### Especificação do microcontrolador ESP32
 - ROM interna de 448kB
 - RAM estática 520kB
