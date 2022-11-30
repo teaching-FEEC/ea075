@@ -106,7 +106,7 @@ Micro servo 9G SG90 TowerPro
 LILYGO®Ttgo t-display 1.14 Polegadas 
 
 ### Demais itens
-Ração para peixes
+- Ração para peixes
 - Anti-Cloro
 - Amonia
 - Anti-algas
