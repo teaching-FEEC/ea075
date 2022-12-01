@@ -1,7 +1,7 @@
 ## Componentes
 
 
-[1] Eletroimã - Trava respositórios  
+[1] Eletroimã - Trava repositórios  
     
 > Esse eletroimã foi escolhido devido a sua facilidade de ser controlado, além disso, com esse  eletromimã a produção da caixa de remédio é facilitada, pois basta se assegurar um espaço pequeno onde o eletroimã possa se firmar para o faze-lo como trava.
 
@@ -27,7 +27,7 @@ https://nettigo.eu/products/i2c-adapter-for-lcd-hd44780-displays
 
 https://www.quick-teck.co.uk/Management/EEUploadFile/1420788438.pdf
 
-[5] Datasheet ATMega328P (Micro-Contralador)  
+[5] Datasheet ATMega328P (Micro-Controlador)  
 
 > O processador ATmega328P foi escolhido, pois já era de nosso conhecimento o que este controlador pode fazer e além disso, não é muito grande e conseguimos usar praticamente todas as suas portas, diminuindo espaço assim na produção da placa.
 
