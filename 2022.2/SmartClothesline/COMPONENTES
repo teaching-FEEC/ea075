@@ -1,0 +1,23 @@
+COMPONENTES
+- MOTOR
+- ESP32
+- Sensor de Chuva
+- PUSH-PULL FOUR CHANNEL DRIVER WITH DIODES - L293D
+- POSITIVE VOLTAGE REGULATORS - L7805
+- Positive voltage regulators - L78L33
+- LOW DROPOUT VOLTAGE REGULATOR - AMS1117CD
+
+DATASHEETS
+https://pdf1.alldatasheet.com/datasheet-pdf/view/1148026/ESPRESSIF/ESP32-WROOM-32.html
+
+https://pdf1.alldatasheet.com/datasheet-pdf/view/22432/STMICROELECTRONICS/L293D.html
+
+https://pdf1.alldatasheet.com/datasheet-pdf/view/22615/STMICROELECTRONICS/L7805.html
+
+https://urolakostapk.files.wordpress.com/2016/10/yl-83-rain-detector-datasheet_low.pdf
+
+https://pdf1.alldatasheet.com/datasheet-pdf/view/794476/STMICROELECTRONICS/L78L33.html
+
+https://pdf1.alldatasheet.com/datasheet-pdf/view/49119/ADMOS/AMS1117CD.html
+
+https://pt.aliexpress.com/item/1005004019975750.html?_randl_currency=BRL&_randl_shipto=BR&src=google&src=google&albch=shopping&acnt=768-202-3196&slnk=&plac=&mtctp=&albbt=Google_7_shopping&isSmbAutoCall=false&needSmbHouyi=false&albcp=18265477163&albag=&trgt=&crea=pt1005004019975750&netw=x&device=c&albpg=&albpd=pt1005004019975750&gclid=CjwKCAjw-rOaBhA9EiwAUkLV4rO9fO7r3pwOcUMApTNBg24LpS60LJawRJHla7cLB1bhRKI8KRD_3xoCJtMQAvD_BwE&gclsrc=aw.ds&aff_fcid=b3c300277c9d4b448fc2e7c6bda57d13-1666057171004-04020-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=b3c300277c9d4b448fc2e7c6bda57d13-1666057171004-04020-UneMJZVf&terminal_id=f0aceac1a1d14348886a152fabe77b79&afSmartRedirect=y&gatewayAdapt=glo2bra
