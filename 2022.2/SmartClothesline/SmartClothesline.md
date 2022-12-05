@@ -31,7 +31,7 @@ Quem nunca saiu de casa e esqueceu de recolher as roupas do varal? Para resolver
 - Quando o sensor de chuva não detectar presença de água, irá acionar os atuadores para (re)estender o varal
 ## Descrição Estrutural do Sistema
 
-![Alt](Micro Controlador.jpg)
+![Alt]( Micro Controlador.jpg)
 
 ## Especificações
 ### Especificação Estrutural
