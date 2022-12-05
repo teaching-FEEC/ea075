@@ -1,4 +1,8 @@
+
 # `<Varal Inteligente>`
+
+  
+
   
 
 # `<Smart Clothesline>`  
@@ -16,31 +20,24 @@ O presente projeto foi originado no contexto das atividades da disciplina de gra
 Quem nunca saiu de casa e esqueceu de recolher as roupas do varal? Para resolver esse problema propomos o sensor inteligente de chuva que tem como seu principal objetivo recolher o varal de estender roupa quando houver indícios de chuva, suprindo essa e outras impossibilitadas de retirarem suas roupas de ambientes chuvosos.
 ## Descrição Funcional
 ### Funcionalidades
-  - Comunicação sem fio via wi-fi para sincronizar informações de sites clima-tempo, para acionar atuadores e para avisar ao proprietário que o sistema foi acionado
-- Medição de umidade
+- Detecção de chuva
+- Acionar motor para estender ou recolher varal
 ### Configurabilidade
-  Aplicativo que possibilita escolher o site de referência, configurar o setpoint de mínimo de probabilidade de chuva e umidade do ar.
+  É possível configurar a sensibilidade do detector de chuva.
 ### Eventos
-- Umidade igual ou maior que valor configurado
-- Umidade menor que valor configurado
-- Indicativo de % de chuva igual ou maior que configurado
-- Indicativo de % de chuva menor que configurado
-- Presença de água no sensor de chuva
+- Detectar a presença de água no sensor de chuva constantemente
 ### Tratamento de Eventos
-- Quando aumentar o nível de umidade o sensor irá checar se há a probabilidade alta de chuva se sim irá acionar os atuadores para recolher o varal, se não , ele aguardará para a probabilidade de chuva aumentar para acionar os atuadores e comunicar o proprietário
-- Quando houver uma probabilidade alta de chuva o sensor irá checar se há a o nível de aumento de umidade se sim irá acionar os atuadores para recolher o varal e comunicar o proprietário, se não , ele aguardará para que o aumento de umidade for significante para acionar os atuadores e se comunicar o proprietário
-- Quando o sensor de chuva detectar presença de água, irá acionar os atuadores para recolher o varal e comunicar o proprietário
-- Quando diminuir o nível de umidade do sensor e a probabilidade de chuva estiver baixa, irá acionar os atuadores para estender o varal novamente
+- Quando o sensor de chuva detectar presença de água, irá acionar os atuadores para recolher o varal
+- Quando o sensor de chuva não detectar presença de água, irá acionar os atuadores para (re)estender o varal
 ## Descrição Estrutural do Sistema
-![Micro Controlador](https://github.com/OtavioSoares1997/ea075/blob/main/2022.2/Micro%20Controlador.png)
-
+![Alt](Micro Controlador.png)
 ## Especificações
 ### Especificação Estrutural
-O microcontrolador escolhido é o ESP-32, este possui módulo wifi e bluetooth, ele se comunicará com o sensor de chuva (YL-83), ao ser detectado chuva, um atuador será acionado, o atuador escolhido é o motor DC de alto torque (12V, 80W). Para alimentar o circuito é necessário um conversor AC-DC de 220V/110V para 12V/5V e um regulador de saída de 3,3V.
+O microcontrolador escolhido é o ESPWROOM-32, ele se comunicará com o sensor de chuva (YL-83) via I2C, ao ser detectado chuva, um atuador será acionado, o atuador escolhido é o motor DC de alto torque (12V, 80W). Para alimentar o circuito é necessário um conversor AC-DC de 220V/110V para 12V/5V e um regulador de saída de 3,3V.
  
 ### Especificação de Algoritmos 
 
-![YL-83 (Sensor de Chuva)](https://github.com/OtavioSoares1997/ea075/blob/main/2022.2/SmartClothesline/YL-83%20(Sensor%20de%20Chuva).jpg)
+![Alt](Algoritmo.png)
 
 
 ## Referências
