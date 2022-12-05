@@ -30,7 +30,9 @@ Quem nunca saiu de casa e esqueceu de recolher as roupas do varal? Para resolver
 - Quando o sensor de chuva detectar presença de água, irá acionar os atuadores para recolher o varal
 - Quando o sensor de chuva não detectar presença de água, irá acionar os atuadores para (re)estender o varal
 ## Descrição Estrutural do Sistema
+
 ![Alt](Micro Controlador.jpg)
+
 ## Especificações
 ### Especificação Estrutural
 O microcontrolador escolhido é o ESPWROOM-32, ele se comunicará com o sensor de chuva (YL-83) via I2C, ao ser detectado chuva, um atuador será acionado, o atuador escolhido é o motor DC de alto torque (12V, 80W). Para alimentar o circuito é necessário um conversor AC-DC de 220V/110V para 12V/5V e um regulador de saída de 3,3V.
